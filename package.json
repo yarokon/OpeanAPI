@@ -8,7 +8,8 @@
     "start": "nodemon --watch dist ./dist/app.js",
     "docs:lint": "npx @redocly/cli@latest lint openapi/openapi.yaml",
     "docs:bundle": "npx @redocly/cli@latest bundle openapi/openapi.yaml --output dist/openapi.yaml",
-    "docs:preview": "npx @redocly/cli@latest preview-docs dist/openapi.yaml"
+    "docs:preview": "npx @redocly/cli@latest preview-docs dist/openapi.yaml",
+    "husky:prepare": "husky install"
   },
   "author": "Yaroslav",
   "dependencies": {
@@ -31,8 +32,14 @@
     "@typescript-eslint/parser": "^5.41.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
