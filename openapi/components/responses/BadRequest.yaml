@@ -1,0 +1,33 @@
+description: Bad Request
+content:
+  application/json:
+    schema:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          enum:
+            - Bad Request
+        data:
+          type: object
+          properties:
+            code:
+              type: string
+              example: invalid_type
+            expected:
+              type: string
+              example: number
+            received:
+              type: string
+              example: string
+            path:
+              type: array
+              items:
+                type: string
+                minItems: 1
+                example: rating
+            message:
+              type: string
+              example: Expected number, received string

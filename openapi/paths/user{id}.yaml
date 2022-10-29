@@ -1,0 +1,58 @@
+parameters:
+  - $ref: ../components/parameters/resourceId.yaml
+get:
+  operationId: getUserById
+  summary: Get user by ID.
+  tags:
+    - User
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/User/User.yaml
+    404:
+      $ref: ../components/responses/NotFound.yaml
+    500:
+      $ref: ../components/responses/InternalServerError.yaml
+put:
+  operationId: updateUserById
+  summary: Update user by ID.
+  tags:
+    - User
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/User/User.yaml
+    required: true
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/User/User.yaml
+    400:
+      $ref: ../components/responses/BadRequest.yaml
+    404:
+      $ref: ../components/responses/NotFound.yaml
+    500:
+      $ref: ../components/responses/InternalServerError.yaml
+delete:
+  operationId: deleteUserById
+  summary: Delete user by ID.
+  tags:
+    - User
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/User/User.yaml
+    404:
+      $ref: ../components/responses/NotFound.yaml
+    500:
+      $ref: ../components/responses/InternalServerError.yaml

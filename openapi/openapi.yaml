@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: User API
+  version: '1.0'
+  description: This is a simple API for creating users.
+  license:
+    name: TBD
+    url: https://redocly.com/subscription-agreement/
+security: []
+servers:
+  - url: http://localhost:3000
+    description: Local server
+  - url: https://v645590uy8.execute-api.us-east-1.amazonaws.com
+    description: Production server
+paths:
+  /user:
+    $ref: paths/user.yaml
+  /user/{id}:
+    $ref: paths/user{id}.yaml

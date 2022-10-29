@@ -1,0 +1,38 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc --watch",
+    "start": "nodemon --watch dist ./dist/app.js",
+    "docs:lint": "npx @redocly/cli@latest lint openapi/openapi.yaml",
+    "docs:bundle": "npx @redocly/cli@latest bundle openapi/openapi.yaml --output dist/openapi.yaml",
+    "docs:preview": "npx @redocly/cli@latest preview-docs dist/openapi.yaml"
+  },
+  "author": "Yaroslav",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^12.0.0",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa__cors": "^3.3.0",
+    "@types/koa-bodyparser": "^4.3.9",
+    "@types/koa-morgan": "^1.0.5",
+    "@types/koa-router": "^7.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}

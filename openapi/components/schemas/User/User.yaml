@@ -1,0 +1,20 @@
+type: object
+description: User object.
+required:
+  - id
+  - name
+  - email
+properties:
+  id:
+    type: string
+    description: Unique identifier of the user.
+    example: 5ab55a78-4a16-11ed-b878-0242ac120002
+    readOnly: true
+  email:
+    type: string
+    description: Email of the user.
+    example: johndoe@gmail.com
+  name:
+    type: string
+    description: Name of the user.
+    example: John

@@ -1,0 +1,11 @@
+apis:
+  user@v1.0:
+    root: ./openapi/openapi.yaml
+extends:
+  - recommended
+features.openapi:
+  generateCodeSamples:
+    languages:
+      - lang: curl
+      - lang: JavaScript
+      - lang: Node.js
