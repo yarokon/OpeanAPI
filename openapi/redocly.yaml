@@ -1,6 +1,6 @@
 apis:
   user@v1.0:
-    root: ./openapi/openapi.yaml
+    root: ./openapi.yaml
 extends:
   - recommended
 features.openapi:

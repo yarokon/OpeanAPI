@@ -1,17 +1,14 @@
 {
   "name": "koa",
   "version": "1.0.0",
+  "author": "Yaroslav",
   "main": "app.js",
   "type": "module",
   "scripts": {
     "watch": "tsc --watch",
     "start": "nodemon --watch dist ./dist/app.js",
-    "docs:lint": "npx @redocly/cli@latest lint openapi/openapi.yaml",
-    "docs:bundle": "npx @redocly/cli@latest bundle openapi/openapi.yaml --output dist/openapi.yaml",
-    "docs:preview": "npx @redocly/cli@latest preview-docs dist/openapi.yaml",
     "prepare": "husky install"
   },
-  "author": "Yaroslav",
   "dependencies": {
     "@koa/cors": "^4.0.0",
     "dotenv": "^16.0.3",
