@@ -12,5 +12,5 @@
     "project": ["tsconfig.json"]
   },
   "plugins": ["@typescript-eslint"],
-  "ignorePatterns": ["dist", "global.d.ts"]
+  "ignorePatterns": ["dist"]
 }

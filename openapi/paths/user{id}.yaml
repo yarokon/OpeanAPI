@@ -16,7 +16,7 @@ get:
       $ref: ../components/responses/NotFound.yaml
     500:
       $ref: ../components/responses/InternalServerError.yaml
-put:
+patch:
   operationId: updateUserById
   summary: Update user by ID.
   tags:
