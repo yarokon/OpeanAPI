@@ -1,4 +1,5 @@
 {
   "*.ts": "eslint --cache --fix",
+  "*.(d.)?{ts}": "tsc-files --noEmit",
   "*.{ts,json,yaml,md}": "prettier --write"
 }
