@@ -1,0 +1,13 @@
+type: object
+description: User object.
+required:
+  - name
+properties:
+  name:
+    type: string
+    description: Name of the user.
+    example: John
+  email:
+    type: string
+    description: Email of the user.
+    example: johndoe@gmail.com

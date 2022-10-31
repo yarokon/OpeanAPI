@@ -1,0 +1,7 @@
+name: id
+in: path
+description: Resource identifier string.
+required: true
+schema:
+  type: string
+  example: 635ecf6c242aeb8cd18fae59

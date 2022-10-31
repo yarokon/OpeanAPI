@@ -1,0 +1,10 @@
+type: object
+description: User metadata.
+required:
+  - _id
+properties:
+  _id:
+    type: string
+    description: Unique identifier of the user.
+    example: 635ecf6c242aeb8cd18fae59
+    readOnly: true

@@ -1,0 +1,6 @@
+name: email
+in: query
+description: Filter by email
+schema:
+  type: string
+  example: johndoe@gmail.com

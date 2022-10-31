@@ -1,0 +1,6 @@
+name: name
+in: query
+description: Filter by name
+schema:
+  type: string
+  example: John

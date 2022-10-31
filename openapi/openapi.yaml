@@ -8,10 +8,10 @@ info:
     url: https://redocly.com/subscription-agreement/
 security: []
 servers:
+  - url: https://open-api.onrender.com
+    description: Production server
   - url: http://localhost:3000
     description: Local server
-  - url: https://v645590uy8.execute-api.us-east-1.amazonaws.com
-    description: Production server
 paths:
   /user:
     $ref: paths/user.yaml

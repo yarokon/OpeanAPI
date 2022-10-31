@@ -1,5 +1,5 @@
 parameters:
-  - $ref: ../components/parameters/resourceId.yaml
+  - $ref: ../components/parameters/id.yaml
 get:
   operationId: getUserById
   summary: Get user by ID.
@@ -25,7 +25,7 @@ patch:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/User/User.yaml
+          $ref: ../components/schemas/User/UserReq.yaml
     required: true
   responses:
     200:

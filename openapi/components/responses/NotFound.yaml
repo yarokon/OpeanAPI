@@ -9,4 +9,4 @@ content:
         message:
           type: string
           enum:
-            - Not found
+            - Not Found
