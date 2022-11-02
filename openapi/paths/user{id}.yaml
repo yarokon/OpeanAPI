@@ -1,7 +1,7 @@
-parameters:
-  - $ref: ../components/parameters/id.yaml
 get:
   operationId: getUserById
+  parameters:
+    - $ref: ../components/parameters/id.yaml
   summary: Get user by ID.
   tags:
     - User
@@ -18,6 +18,8 @@ get:
       $ref: ../components/responses/InternalServerError.yaml
 patch:
   operationId: updateUserById
+  parameters:
+    - $ref: ../components/parameters/id.yaml
   summary: Update user by ID.
   tags:
     - User
@@ -42,6 +44,8 @@ patch:
       $ref: ../components/responses/InternalServerError.yaml
 delete:
   operationId: deleteUserById
+  parameters:
+    - $ref: ../components/parameters/id.yaml
   summary: Delete user by ID.
   tags:
     - User
