@@ -1,9 +1,11 @@
 import Router from 'koa-router';
 
 import { User } from '../models/user.js';
-import { returnUserOrNotFound } from '../middleware/index.js';
+import { isAuthorized, returnUserOrNotFound } from '../middleware/index.js';
 
 const userRouter = new Router({ prefix: '/user' });
+
+userRouter.use(isAuthorized);
 
 userRouter.post('/', async (ctx) => {
   ctx.body = await new User(ctx.request.body).save();
